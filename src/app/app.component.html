@@ -3,17 +3,25 @@
 <app-header></app-header>
 
 <app-home></app-home>
+<!-- This is Static data -->
+<h2>This is String Interpolation</h2>
+<!-- This is dynamic data coming ts file to html Using String interpolation  -->
+<h3>{{x}}</h3>
+<h2>{{city}}</h2>
+<h3>{{10*5}}</h3>
+<h2>{{d}}</h2>
+<img src={{path}} alt="No image">
+<img src="chut.jpg">
 
-@if () {
-  
-} @else {
-  
-}
-@switch () {
-  @case () {
-    
-  }
-  @default {
-    
-  }
-}
+
+<h1 class={{c}}>This is Special</h1>
+
+
+<form [formGroup]="login">
+   Username: <input type="text" formControlName="uname" class="form-control w-50 m-2">
+   Password: <input type="password" formControlName="password" class="form-control w-50 m-2">
+   <button (click)="onSubmit()" class="btn btn-primary">Show </button>
+
+
+</form>
+
