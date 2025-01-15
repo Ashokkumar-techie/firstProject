@@ -4,7 +4,7 @@
       <label for="validationCustom01" class="form-label">First name</label>
       <input type="text" class="form-control" #fname="ngModel" [(ngModel)]="studentObj.firstname" name="firstname" value="Mark" required minlength="3">
       <div class="text-danger">
-       <!-- @if (fname.errors?.['required'] && fname.touched && fname.dirty) {
+       @if (fname.errors?.['required'] && fname.touched && fname.dirty) {
         Required..!!!
          
        } 
@@ -13,7 +13,7 @@
         At least 3 Characters..!!!
 
        }
-        -->
+       
       </div>
     </div>
     <div class="col-md-4">
